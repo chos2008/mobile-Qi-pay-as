@@ -1,5 +1,6 @@
-#Fri Nov 09 11:21:42 CST 2012
+#Sun Feb 08 16:13:33 CST 2015
 eclipse.preferences.version=1
+encoding//WebContent/css/register.css=UTF-8
 encoding//dist/qi_pay.sql=UTF-8
 encoding//src/main/java/com/qidea/payment/CallbackJSONResponse.java=UTF-8
 encoding//src/main/java/com/qidea/payment/DefaultResponse.java=UTF-8
