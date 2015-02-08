@@ -4,7 +4,7 @@
 			if (dom.removeEventListener) {
 				dom.removeEventListener(type, listener, false);
 			} else {
-				dom.detachEvent("on" + type, listener);
+				dom.detachEvent(type, listener);
 			}
 		}
 		
