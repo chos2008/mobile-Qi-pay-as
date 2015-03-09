@@ -9,18 +9,18 @@
 </head>
 <body>
 
+<div style="width: 100%;">
 <c:forEach items="${merchandises}" var="variable">
-	<li style="float: left; margin: 2px 2px;" onclick="javascript: pay();">
-		<div style="width: 40px; height: 60px;">
-			<div style="width: 100%; height: 40px; background: url('${variable.image}') no-repeat; background-position: 0px 0px;">
-				
-			</div>
-			<div style="width: 100%; height: 20px; line-height: 20px; text-align: center; font-size: 10px">
-				<a href="${variable.url}"><label>${variable.name}</label></a>
-			</div>
+	<div style="margin: 2px 4px 4px 4px;" onclick="javascript: pay();">
+		<div style="width: 100%; height: 400px; background: url('${variable.image}') no-repeat; background-position: center;">
+			
 		</div>
-	</li>
+		<div style="width: 100%; height: 20px; line-height: 20px; text-align: center; font-size: 10px">
+			<a href="../tgou/merchandise/123456.htm?link=${variable.url}"><label>${variable.name}</label></a>
+		</div>
+	</div>
 </c:forEach>
+</div>
 
 <div style="width: 100%;">
 	<div style="width: 270px; margin: 0 auto; display: -moz-box; display: -webkit-box; display: box;">

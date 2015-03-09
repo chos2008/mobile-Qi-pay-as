@@ -20,6 +20,7 @@
 
 	<context:component-scan base-package="com.qidea.payment.rest"/>
     <context:component-scan base-package="com.qidea.payment.controller"/>
+    <context:component-scan base-package="com.qidea.tgou.controller"/>
     <!-- 
     <context:component-scan base-package="com.jiadi.customservice.rest">
     	<context:exclude-filter type="assignable" expression="com.jiadi.customservice.rest.MessageRestService"/>

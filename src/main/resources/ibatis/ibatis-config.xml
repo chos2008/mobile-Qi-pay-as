@@ -10,6 +10,7 @@
 		<typeAlias type="com.qidea.payment.transaction.Transaction" alias="Transaction"/>
 		<typeAlias type="com.qidea.payment.transaction.CallbackEndpoint" alias="CallbackEndpoint"/>
 		<typeAlias type="com.qidea.payment.transaction.log.TransactionLog" alias="TransactionLog"/>
+		<typeAlias type="com.qidea.tgou.Merchandise" alias="Merchandise"/>
 	</typeAliases>
 		
 
@@ -17,6 +18,7 @@
 		<mapper resource="ibatis/ta.xml" />
 		<mapper resource="ibatis/TaA.xml" />
 		<mapper resource="ibatis/Transaction.xml" />
+		<mapper resource="ibatis/Merchandise.xml" />
 	</mappers>
 	
 </configuration>
