@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+    "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="ta">
+	<resultMap type="Merchandise" id="Merchandise">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="m_provider" property="provider"/>
+		<result column="m_provider_category" property="providerCategory"/>
+		<result column="m_url" property="url"/>
+		<result column="m_img" property="image"/>
+		<result column="m_category" property="category"/>
+		<result column="creation" property="creation"/>
+		<result column="updation" property="updation"/>
+	</resultMap>
+	
+	<!-- 查询第三方接入服务信息 -->
+	<select id="p-list" resultMap="Merchandise">
+		select * from tgou_merchandise limit #{firstResult}, #{maxResultSize}
+	</select>
+</mapper>
