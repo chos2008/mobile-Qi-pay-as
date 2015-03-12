@@ -77,7 +77,7 @@ public class MerchandiseController {
 		HttpTemplate template = new HttpTemplate();
 		
 		Map<String, String> param = new HashMap<String, String>();
-		param.put("oauth_consumer_key", "");
+		param.put("oauth_consumer_key", "8008000001004");
 		param.put("oauth_signature_method", "md5");
 		param.put("oauth_timestamp", "123456");
 		param.put("oauth_nonce", "abcdef");
@@ -93,7 +93,7 @@ public class MerchandiseController {
 		System.out.println("sign(sort): " + sb.toString());
 		
 //		sb.deleteCharAt(sb.length() - 1);
-		sb.append("oauth_token_secret").append("=").append("");
+		sb.append("oauth_token_secret").append("=").append("d038700292864f86ab02e370ce500c5c");
 		String sign = sb.toString();
 		System.out.println("sign(sort + secret): " + sign);
 		
